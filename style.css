@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(107, 185, 107);
+    color: white;
+    padding: 1rem;
+    padding-left: 4rem;
+    font-size: larger;
+    
+    position: relative;
+}
+nav span::after{
+
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -400px;
+    border-width: 20px;
+    border-style: solid;
+    border-color:rgb(107, 185, 107)transparent transparent  transparent;
+    
+}
+
+.ürünler{
+    padding: 2rem;
+    vertical-align: middle;
+}
+
+.ürünler table thead tr{
+    background-color: rgb(65, 65, 65);
+    color: white;
+
+}
+.ürünler table thead tr th:nth-child(1){
+    padding: 0.3rem 1rem 0.3rem 0.2rem ;
+}
+
+.ürünler table thead tr th:nth-child(2){
+    padding-right: 10rem;
+    padding-left: 1rem;
+}
+
+.ürünler table thead tr th:nth-child(3){
+    padding: 0.3rem 1rem;
+       
+}
+
+.ürünler table thead tr th:nth-child(4),th:nth-child(5){
+    padding: 0.3rem 0.1rem;
+    text-align: end;
+    width: 8rem;
+       
+}
+
+tbody tr:nth-child(odd){
+    background-color: lightgrey;
+}
+
+tbody tr td:nth-child(3){
+    text-align: center;
+}
+
+tbody tr td:nth-child(4),td:nth-child(5){
+    text-align: right;
+    padding: 0.2rem;
+}
+
+tbody tr:last-child{
+    background-color: rgb(65, 65, 65);
+    color: rgb(255, 255, 255);
+    text-align: end;
+    
+}
+
+tbody tr:last-child td{
+    padding: 0.5rem 0.2rem;
+}
+
+tbody tr:hover{
+    background-color: aquamarine;
+}
+
+
+
+
+tbody tr td:last-child::after{
+    font-family: 'font awesome 5 free';
+    content: '\f2ed';
+    margin: 0.5rem;
+}
+
+tbody>tr:last-child td:last-child::after{
+    content: '';
+}
+tbody>tr:last-child td:last-child::before{
+    content: '';
+}
+
+tbody tr td:last-child::before{
+    font-family: 'font awesome 5 free';
+    content: '\f044';
+    margin: 0.5rem;
+}
+.ödeme ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.ödeme ul li{
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    display: inline-block;
+    list-style-type: none;
+    background-color: lightsalmon;
+    width: 12rem;
+    height: 3rem;
+    text-align: center;
+}
+
+
+
+
+.ödeme ul li:hover{
+    cursor: pointer;
+}
+.ödeme ul{
+    width: 47rem;
+    text-align: end;
+}
+
+.ödeme ul li:first-child{
+    width: rem;
+} 
+
+.ödeme ul li:first-child::before{
+        content: '\1F6D2';
+}
+
+.ödeme ul li:last-child::before{
+    content: '💳';
+}
+
